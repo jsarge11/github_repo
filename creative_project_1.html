@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<link rel="stylesheet" type ="text/css" href="creative_project_1.css">
+<style>
+body {
+        background-image: url("http://www.utahvalleyheat.org/wp-content/uploads/2016/01/baseball-2.jpg");
+        background-size: cover;
+
+}
+h1 {
+	font-family: Century Gothic, sans-serif;
+	color: white;
+	padding-right: 65px;
+	font-size: 60px;
+}
+#header {
+	text-align: right;
+	height: 150px;
+
+}
+
+#section {
+
+	float: left;
+	width: 90%;
+	height: 800px;
+}
+
+#nav {
+
+	float: left;
+	width: 10%;
+	height: 800px;
+}
+#footer {
+
+	height: 150px;
+	width: 100%;
+	clear: both;
+}
+#square {
+	width: 90%;
+	height: 90%;
+	border-radius: 25px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	margin:auto;	
+ 	background-image: url("http://www.utahvalleyheat.org/wp-content/uploads/2016/01/Swingley_mpost_scorecard_black_pitchers_clean.jpg");
+	background-size: 990px 700px;
+ 	background-position: right 40px top 50%;
+	background-repeat: no-repeat;
+ 	 float: right;
+ 
+}
+table, th, td {
+  	float: right;
+	border-spacing: 5px;
+	padding: 20px;	
+	padding-left: 15px;
+
+  
+   
+   
+}
+.img-scoreboard {
+
+	border:1px solid #ffffff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;  ;
+	
+	display:block;
+	margin:auto;
+}
+#submit {
+	padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 	 
+
+position: relative;
+  top: 765px;
+  left: 700px;
+}	
+#submit2 { 
+        padding:5px 15px;  
+    background:#ccc;  
+    border:0 none; 
+    cursor:pointer; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;                 
+        
+position: relative; 
+  top: -80px; 
+  left: 630px; 
+}    
+#roster {
+	float: left;
+	padding-left: 210px;
+	border-spacing: 2px;
+}
+</style>
+<script>
+	function calc() {
+    	var input = document.getElementById("1ab").value;
+      	var input2 = document.getElementById("2ab").value;
+        var input3 = document.getElementById("3ab").value;
+        
+        var input4 = +input + +input2 + +input3;
+       alert(input4);
+        
+}
+
+
+
+
+}
+</script>
+<div id="header">
+<h1>Offensive Baseball Stat Calculator</h1>
+</div>
+<div id="nav">
+Nav
+</div>
+<div id="section">
+<div id="square">
+
+<form id="roster">
+  <table id="roster">
+    <tr>
+      <td>
+        <input type="text" style="width: 75px" style="height 25px">
+	<tr>      
+</td>
+      <td>
+        <input type="text" style="width: 75px">
+	<tr>
+	</td>
+	</tr>
+</tr>
+<tr>
+      <td>
+        <input type="text" style="width: 75px" style="height 25px">
+        <tr>
+</td>
+      <td>
+        <input type="text" style="width: 75px">
+        <tr>
+        </td>
+        </tr>
+</tr>
+<tr>
+      <td>
+        <input type="text" style="width: 75px" style="height 25px">
+        <tr>
+</td>
+      <td>
+        <input type="text" style="width: 75px">
+        <tr>
+        </td>
+        </tr>
+</tr>
+<tr>
+      <td>
+        <input type="text" style="width: 75px" style="height 25px">
+        <tr>
+</td>
+      <td>
+        <input type="text" style="width: 75px">
+        <tr>
+        </td>
+        </tr>
+</tr>
+<tr>
+      <td>
+        <input type="text" style="width: 75px" style="height 25px">
+        <tr>
+</td>
+      <td>
+        <input type="text" style="width: 75px">
+        <tr>
+        </td>
+        </tr>
+</tr>
+<tr>
+      <td>
+        <input type="text" style="width: 75px" style="height 25px">
+</tr>
+</td>
+</table>
+</form>
+
+<form onsubmit="return false;">
+  <table>
+    <tr>
+      <td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+	<td>
+        <input type="text" id="1ab" style="width: 25px" style="height 25px">
+      </td>
+      <td>
+        <input type="text" id="2ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="3ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="4ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="5ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="6ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="7ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="8ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="9ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="10ab" style="width: 25px">
+      </td>
+      <td>
+        <input type="text" id="11ab" style="width: 25px">
+      </td>
+    </tr>
+
+    <tr>
+         <input id="t" type="submit" value="Submit" onclick="calc();"> 
+  
+  </table>
+</form>
+</div>
+</div>
+<div id="footer">F
+</div>
+
+
+
+
+
+
+
+
+</head>
+
+
+
+</body>
+</html>
+
+
