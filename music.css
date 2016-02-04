@@ -1,0 +1,110 @@
+
+
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	overflow: hidden;
+	 background-image: url("http://cdn1.theodysseyonline.com/files/2015/12/20/6358623850982099701625905936_concert%20crowd.jpg");
+	background-size: cover;
+}
+h1, #artistName, #summary{
+	text-align: center;
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        color: white;	
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	transition: background 0.5s linear;
+}
+
+#upperleft {
+	width: 30%;
+	height: 30%;
+	float: left;
+	margin-right: 30px;
+	transition: background 0.5s linear;
+}
+
+#upperright {
+	width: 100%;
+	height: 30%;
+}
+
+#empty {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+#footer {
+	width: 100%;
+	height: 20%;
+}
+#floating {
+ 	 z-index: 1;
+	 position: absolute;
+	 right: 30%;
+	 bottom: 20px;
+	 background-color: #f3f3f3;
+	 width: 30%;
+	 height: 40%;
+	 padding: 0px;	
+	 color: black; 
+	 text-align: center;
+	background: #f0f0fd;
+    background: rgba(240,240,253,0.90);
+    padding: 22px 32px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+    -box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+
+
+}
+#button {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+	background:-moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 5%;
+}
+#button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+	background:-moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+	background-color:#5cbf2a;
+}
+#button:active {
+	position:relative;
+	top:1px;
+}
+#cssinput { border-color:#cccccc; 
+
+ 	font-size:26px;
+ 	border-radius:1px; 
+	border-width:0px; 
+	padding:19px; 
+	background-color:#ffffff; 
+	margin-left: 30px;
+	color:#000000; 
+	font-family:sans-serif;  } 
+#cssinput:focus { outline:none; } 

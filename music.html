@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Music</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="music.css">
+
+<script>
+$(document).ready(function() {
+
+  $("#button").click(function(e){
+  var value = $("#cssinput").val();
+  console.log(value);
+  e.preventDefault();
+  $("#dispartist").text(value);
+var url_1="http://ws.audioscrobbler.com/2.0/?method=artist.getInfo&artist="
+var url_2=value;
+var url_3="&format=json&api_key=258303230cddf69a971363704764e221";
+var myurl = url_1+url_2+url_3;
+  console.log(myurl);
+ $.ajax({
+  url: myurl, 
+  
+  success: function(data) {
+  var name = data.artist.name;
+  var summary = data.artist.bio.summary;
+  var img = data.artist.image[4]["#text"];
+  console.log(img);
+  var img_url = "<img src=\"" + img + "\" />";
+  console.log(img_url);
+   
+ 
+  $("#artistName").hide().html(name).fadeIn(); 
+  $("#summary").hide().html(summary).fadeIn();
+  
+
+  upperleft.style.background = "#000000 url(" + img + ") center no-repeat";
+  upperleft.style.backgroundSize = "100%"; 
+ // $(body).css("background","url("+img+") no-repeat";
+}
+
+})
+
+});
+});
+</script>
+</head>
+
+<body>
+<div id="upperleft">
+<h1 id="artistName"></h1>
+</div>
+<div id="upperright"><h2 id="summary"></h2></div>
+<div id="empty">
+<div id="floating">  
+<h1>Artist</h1><input type="text" id="cssinput" value=""><br>
+<input id="button" type="submit" value="find music">
+</div> 
+
+<br><br>
+
+
+</div>
+<div id="footer"></div>
+
+</body>
+</html>
+
+
